@@ -2,12 +2,11 @@
 const createContactHTML = {
     contactPersonHTML(contact) {
         return `
-            <section class="contact">
+            <div class="contact">
             <h1>${contact.name}</h1>
             <p>${contact.phoneNumber}</p>
-            <p>${contact.address}</p>
-            <br>
-        </section> `
+            <p>${contact.address}</p>  
+        </div> `
     }
 }
 

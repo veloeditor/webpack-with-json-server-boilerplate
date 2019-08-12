@@ -1,4 +1,4 @@
-import createContactHTML from "./contact.js"
+import createContactHTML from "./contactFactory.js"
 import API from "./contactCollection.js"
 
 const contactContainer = document.querySelector("#contact-container")
@@ -12,7 +12,6 @@ const contactList = {
 
 //function to actually call the api, get the new contact and write the innerHTML to the DOM
 const callAPI = () => {
-    // contactContainer.innerHTML = ""
     API.getContacts()
         .then(contacts => {
             contacts.forEach(contact => {

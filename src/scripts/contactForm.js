@@ -1,7 +1,7 @@
 import API from "./contactCollection.js"
 import callAPI from "./contactList.js"
 
-const submitButton = document.querySelector("#record-contact")
+const submitButton = document.querySelector("#save-contact")
 
 //grab DOM references to each of the form fields
 const ContactName = document.querySelector("#contactName")
@@ -22,12 +22,12 @@ const addNewContactToAPI = () => {
     submitButton.addEventListener("click", event => {
         const createContact = newContact(ContactName, ContactPhoneNum, ContactAddress)
         API.saveContacts(createContact)
-        .then(callAPI)
-        .then(() => {
-            ContactName = ""
-            ContactPhoneNum = ""
-            ContactAddress = ""
-        })
+            .then(callAPI)
+            .then(() => {
+                ContactName = ""
+                ContactPhoneNum = ""
+                ContactAddress = ""
+            })
     })
 }
 
