@@ -11,18 +11,18 @@
 
 <body>
     <section id="contact-form">
-        <h3>Contact List</h3>
+        <h2><i class="fas fa-address-book"></i> Contact List</h2>
         <fieldset>
-            <label for="contactName">Contact's Full Name:</label>
-            <input type="text" name="contactName" id="contactName">
+            <label for="contactName">Name:</label>
+            <input type="text" name="contactName" id="contactName" placeholder="Enter your full name" autofocus>
         </fieldset>
         <fieldset>
-            <label for="phoneNumber">Contact's Phone Number:</label>
-            <input type="text" name="phoneNumber" id="phoneNumber">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" name="phoneNumber" id="phoneNumber" size="25" placeholder="Enter your phone number">
         </fieldset>
         <fieldset>
-            <label for="address">Contact's Address:</label>
-            <input type="text" name="address" id="address">
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" size="40" placeholder="Enter your address">
         </fieldset>
         <input id="save-contact" type="submit" value="Record Contact">
 
@@ -33,6 +33,7 @@
     <hr />
     <article id="container"></article>
     <script type="module" src="./scripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/24b573a006.js"></script>
 </body>
 
 </html>

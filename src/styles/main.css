@@ -9,6 +9,9 @@ body {
     justify-content: space-evenly;
     margin: auto;
     max-width: 800px;
+    /* height: 700px;
+    overflow: scroll; */
+
 }
 
 .contact {
@@ -19,10 +22,12 @@ body {
     margin-bottom: 10px;
     border-radius: 10px;
     flex-basis: 40%;
+    border-style: solid;
+    border-color: rgb(54, 54, 54);
 }
 
 .contact:hover {
-    background-color: lightcyan;
+    background-color: lightgoldenrodyellow;
 }
 
 #contact-form {
